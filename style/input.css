@@ -1,0 +1,524 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  * {
+    @apply list-none;
+  }
+
+  .grd {
+    background-image: linear-gradient(120deg, #89f7fe 0%, #66a6ff 100%);
+  }
+  .grd2 {
+    background-image: linear-gradient(120deg, #c8ecee 0%, #91b8ee 100%);
+  }
+
+  /* .grd2{
+    background-image: linear-gradient(to top, #accbee 0%, #e7f0fd 100%);  } */
+  .showIcon .fa-xmark {
+    display: block !important;
+  }
+
+  .showIcon .fa-magnifying-glass {
+    display: none !important;
+  }
+
+  .liHover>li {
+    @apply hover:bg-blue/70 transition-all cursor-pointer hover:text-gray-100 flex items-center;
+  }
+
+  .ulChilde {
+    @apply bg-white divide-y-2 absolute top-[55px] -right-[100%] lg:right-[0] sm:w-[280px] lg:w-[350px] transition-all text-gray-700 py-2 [&>li]:py-3 [&>li]:pr-2 shadow border rounded-b-xl invisible group-hover:visible group-hover:top-[60px] opacity-0 group-hover:opacity-100 liHover;
+  }
+
+  .liP {
+    @apply relative;
+  }
+
+  .liP .ulCH {
+    display: none;
+    position: absolute;
+    right: 100%;
+    width: 300px;
+    color: #444;
+    top: 0;
+    background-color: #f9fafb !important;
+    @apply shadow rounded-l-lg overflow-hidden p-3 rounded-tr-none rounded-2xl;
+  }
+
+  .liP:hover .ulCH {
+    display: block;
+    background-color: #f9fafb !important;
+  }
+
+  .backgroundxyCenter {
+    background-position: center center;
+  }
+
+  .bg-blure {
+    @apply backdrop-blur-lg bg-white/20;
+  }
+
+  .animateUp {
+    animation: Up ease forwards 1s;
+  }
+
+  .animateUpDelay {
+    animation: Up ease forwards 1.5s;
+  }
+
+  @keyframes Up {
+    from {
+      transform: translateY(50px);
+      opacity: 0;
+    }
+
+    to {
+      transform: translateY(0px);
+      opacity: 1;
+    }
+  }
+
+  .simpleHover {
+    @apply hover:text-gray-200 transition-all block md:text-xs lg:text-sm;
+  }
+
+  .openedMenu {
+    @apply translate-x-0 opacity-100;
+  }
+
+  .closedMenu {
+    @apply translate-x-[100%] opacity-0;
+  }
+
+  .showed {
+    animation: Showed 150ms ease forwards;
+  }
+
+  .hiddened {
+    animation: Hiddened 150ms ease forwards;
+  }
+
+  .title {
+    @apply text-center mt-5 sm:mt-10 text-2xl sm:text-3xl text-gray-700 font-py-md;
+  }
+
+  .contentHeader {
+    @apply bg-black/70 backdrop-blur-sm w-full h-full absolute inset-0 z-[3] flex justify-center flex-col sm:flex-row sm:justify-between items-center sm:px-5;
+  }
+
+  .arrowButton {
+    @apply hidden sm:flex group-hover:opacity-100 opacity-0 text-white border-2 border-white rounded-full p-1.5 justify-center items-center bg-blure transition-all hidden sm:flex group-hover:opacity-100 opacity-0 text-white border-2 border-white rounded-full p-1.5 justify-center items-center bg-blure transition-all sm:m-0;
+  }
+
+  .noMargin {
+    margin: 0 0 0 0 !important;
+  }
+
+  .noPadding {
+    padding: 0 0 0 0 !important;
+  }
+
+  .bgImage {
+    background-image: url(.././images/contact-bg.jpg);
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  /*Form style  */
+  /* From Uiverse.io by gharsh11032000 */
+  .form-container {
+    max-width: 400px;
+    background: linear-gradient(#212121, #212121) padding-box,
+      linear-gradient(145deg, transparent 35%, #201cff, #028fcc) border-box;
+    backdrop-filter: blur("20px");
+    border: 2px solid transparent;
+    padding: 32px 24px;
+    font-size: 14px;
+    font-family: inherit;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    box-sizing: border-box;
+    border-radius: 16px;
+  }
+
+  .form-container button:active {
+    scale: 0.95;
+  }
+
+  .form-container .form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .form-container .form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+  }
+
+  .form-container .form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 12px;
+  }
+
+  .form-container .form-group input {
+    width: 100%;
+    padding: 12px 16px;
+    border-radius: 8px;
+    color: #fff;
+    font-family: inherit;
+    background-color: transparent;
+    border: 1px solid #414141;
+  }
+
+  .form-container .form-group textarea {
+    width: 100%;
+    padding: 12px 16px;
+    border-radius: 8px;
+    resize: none;
+    color: #fff;
+    height: 96px;
+    border: 1px solid #414141;
+    background-color: transparent;
+    font-family: inherit;
+  }
+
+  .form-container .form-group input::placeholder {
+    opacity: 0.5;
+  }
+
+  .form-container .form-group input:focus {
+    outline: none;
+    border-color: #028fcc;
+  }
+
+  .form-container .form-group textarea:focus {
+    outline: none;
+    border-color: #028fcc;
+  }
+
+  .form-container .form-submit-btn {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    align-self: flex-start;
+    font-family: inherit;
+
+    width: 40%;
+    background: #313131;
+    border: 1px solid #414141;
+    padding: 12px 16px;
+    font-size: inherit;
+    gap: 8px;
+    margin-top: 8px;
+    cursor: pointer;
+    border-radius: 6px;
+  }
+
+  .form-container .form-submit-btn:hover {
+    background-color: #ffffff26;
+    border-color: #fff;
+  }
+
+  /* From Uiverse.io by elisapi */
+  .card {
+    width: fit-content;
+    height: fit-content;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+    gap: 20px;
+  }
+
+  /* for all social containers*/
+  .socialContainer {
+    width: 52px;
+    height: 52px;
+    background-color: #00acee;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    transition-duration: 0.3s;
+    border-radius: 10px;
+  }
+
+  /* instagram*/
+
+  .containerTwo:hover {
+    background-color: #0080b3;
+    transition-duration: 0.3s;
+    transform: scale(1.05);
+  }
+
+  /* linkdin*/
+  .containerThree:hover {
+    background-color: #0080b3;
+    transition-duration: 0.3s;
+    transform: scale(1.05);
+  }
+
+  /* Whatsapp*/
+  .containerFour:hover {
+    background-color: #0080b3;
+    transition-duration: 0.3s;
+    transform: scale(1.05);
+  }
+
+  .socialContainer:active {
+    transform: scale(0.9);
+    transition-duration: 0.3s;
+  }
+
+  .box {
+    @apply bg-blue min-h-[350px] rounded-xl overflow-hidden md:h-[400px] lg:h-[320px] shadow;
+    background-image: url(../images/1.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    user-select: none;
+  }
+
+  .box2 {
+    @apply bg-blue min-h-[350px] rounded-xl overflow-hidden md:h-[400px] lg:h-[150px] shadow;
+    background-image: url(../images/1.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    user-select: none;
+  }
+
+  .box div {
+    @apply w-full min-h-[350px] sm:h-full bg-black/50 flex justify-center items-center font-py-md text-gray-50 text-center px-3 relative;
+  }
+
+  .box2 div {
+    @apply w-full min-h-[100%] bg-black/50 flex justify-center items-center font-py-md text-gray-50 text-center px-3 relative;
+  }
+
+  .box2:hover div {
+    @apply backdrop-blur-sm transition-all
+  }
+
+  .box:hover div {
+    @apply backdrop-blur-sm transition-all
+  }
+
+  .officBox {
+    @apply bg-blue rounded-xl overflow-hidden shadow;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    user-select: none;
+  }
+
+  .officBoximage1 {
+    background-image: url(../images/malakShahr.jpg);
+  }
+
+  .officBoximage2 {
+    background-image: url(../images/kashan.jpg);
+  }
+
+  .officBoximage3 {
+    background-image: url(../images/pirozy.jfif);
+  }
+
+  .officBoximage4 {
+    background-image: url(../images/abshar.png);
+  }
+
+  .officBoximage5 {
+    background-image: url(../images/tamadoon.jpg);
+  }
+
+  .officBoximage6 {
+    background-image: url(../images/sepahanShahr.jpg);
+  }
+
+  .officBoximage7 {
+    background-image: url(../images/shahinShahr.webp);
+  }
+
+  .officBoximage8 {
+    background-image: url(../images/gazBarkhovar.png);
+  }
+
+  .officBoximage9 {
+    background-image: url(../images/saraRod.png);
+  }
+
+  .officBoximage10 {
+    background-image: url(../images/starmal.png);
+  }
+
+  .officBoximage11 {
+    background-image: url(../images/activGame.jpg);
+  }
+
+  .officBoximage12 {
+    background-image: url(../images/baharestan.jpg);
+  }
+
+  .parkin_gBackgroundImage {
+    background-image: url(../images/parking.jpg);
+
+  }
+
+  .bgPosition {
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 100%;
+    user-select: none;
+  }
+
+  .bgImagePrd1 {
+    background-image: url(../images/sellStand/sellStand.jpg);
+  }
+  .bgImagePrd2 {
+    background-image: url(../images/sellStand/sellStand.jpg);
+  }
+  .bgImagePrd2-1 {
+    background-image: url(../images/Kahande/kahandeVid.gif);
+  }
+  .bgImagePrd2-2 {
+    background-image: url(../images/Kahande/kahandeVid2.gif);
+  }
+  .bgImagePrd2-3 {
+    background-image: url(../images/Kahande/kahandeVid3.gif);
+  }
+  .bgImagePrd2-4 {
+    background-image: url(../images/Kahande/kahandeImage.png);
+  }
+  .bgImagePrd2-5 {
+    background-image: url(../images/Kahande/kahandeImage.png);
+  }
+  .bgImagePrd4-1 {
+    background-size: cover;
+    background-image:url(../images/shargApp/shargApp.jpg);
+  }
+  .bgImagePrd3-1 {
+    background-size: cover;
+    background-image:url(../images/hardwareBage/hardwareBage2.gif);
+  }
+  .bgImagePrd3-2 {
+    background-size: cover;
+    background-image:url(../images/hardwareBage/hardwareBage.gif);
+  }
+  
+
+  .electronicBoard1_gBackgroundImage {
+    background-image: url(../images/ElectronicBoard.jpg);
+
+  }
+
+  .electronicBoard2_gBackgroundImage {
+    background-image: url(../images/ElectronicBoard2.jpg);
+
+  }
+
+  .b1 {
+    background-image: url(../images/Ai.jpg);
+    @apply md:w-[300px] lg:w-auto
+  }
+
+  .b2 {
+    background-image: url(../images/car.jpg);
+    @apply md:w-[300px] [&>div]:md:px-4 [&>div]:lg:px-3 lg:w-auto
+  }
+
+  .b3 {
+    background-image: url(../images/card.jpg);
+    @apply md:w-[300px] lg:w-auto
+  }
+
+  .b4 {
+    background-image: url(../images/board.jpg);
+
+  }
+
+  .b5 {
+    background-image: url(../images/app.webp);
+  }
+
+  .b6 {
+    background-image: url(../images/game.jpg);
+  }
+
+  .b7 {
+    background-image: url(../images/stand.jpg);
+  }
+
+  .box div .childeText {
+    @apply text-[14px] md:mx-2 md:text-base;
+  }
+
+  .box2 div .childeText {
+    @apply text-[14px] md:mx-2 md:text-base;
+  }
+
+  .officBox div {
+    @apply w-full h-[250px] sm:h-full bg-black/50 flex justify-center items-center font-py-md text-gray-50 text-center px-3 relative;
+
+  }
+
+  .childeText {
+    @apply invisible opacity-0 group-hover:translate-y-[10px] group-hover:opacity-100 transition-all group-hover:visible text-lg absolute;
+  }
+
+  .titleText {
+    @apply group-hover:opacity-0 transition-all group-hover:-translate-y-4 text-2xl sm:text-3xl;
+  }
+
+  ::-webkit-scrollbar {
+    width: 5px;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    @apply bg-blue/25
+  }
+
+  
+}
+
+@layer base {
+  @font-face {
+    font-family: "dana-sm";
+    src: url(../fonts/DanaFaNum-Regular.woff2);
+  }
+
+  @font-face {
+    font-family: "dana-md";
+    src: url(../fonts/DanaFaNum-Medium.woff2);
+  }
+
+  @font-face {
+    font-family: "dana-bold";
+    src: url(../fonts/DanaFaNum-DemiBold.woff2);
+  }
+
+  @font-face {
+    font-family: "py-sm";
+    src: url(../fonts/PeydaWeb-light.woff);
+  }
+
+  @font-face {
+    font-family: "py-md";
+    src: url(../fonts/PeydaWeb-Medium.woff);
+  }
+
+  @font-face {
+    font-family: "py-bold";
+    src: url(../fonts/PeydaWeb-Bold.woff);
+  }
+}
