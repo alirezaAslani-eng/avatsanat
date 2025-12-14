@@ -168,12 +168,29 @@
                     </div>
                 </aside>
                 <!--Logo  -->
-                <aside class="font-dana-md flex items-center gap-x-2">
+                <aside class="font-dana-md flex items-center gap-x-4">
+                    <form class="hidden md:flex items-center gap-x-1 relative">
+                        <!-- Search button Desktop -->
+                        <button type="submit"
+                            class=" font-dana-sm text-sm bg-miniSky h-full p-2.5 rounded-lg hover:bg-miniSky/80 transition-all hidden 1212px:flex justify-center items-center text-gray-600 ">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </button>
+                        <!-- Search button show on < 1212px -->
+                        <button type="button" id="searchBtn"
+                            class=" font-dana-sm text-sm bg-miniSky h-full p-2.5 rounded-lg hover:bg-miniSky/80 transition-all flex 1212px:hidden justify-center items-center text-gray-600 active:translate-y-1 group">
+                            <i class=" w-4 h-4 fa-solid fa-magnifying-glass"></i>
+                            <i style="display: none;" class="w-4 h-4 fa-solid fa-xmark"></i>
+                        </button>
+                        <!-- Search Input Desktop -->
+                        <input class="transition-all p-2 text-sm rounded-lg outline-none hidden 1212px:block "
+                            type="text" name="search" id="inpSearch" placeholder="جستجو">
+                    </form>
                     <a href="./index.html" class="inline-flex items-center gap-x-1 text-gray-50 ">
                         <h1 class="md:text-xs lg:text-sm">آوات صنعت</h1>
                         <img class="w-14 md:w-12 lg:w-16" src="./images/Logo.png" alt="">
                     </a>
                 </aside>
+
             </div>
         </section>
 
