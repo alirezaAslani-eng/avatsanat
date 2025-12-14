@@ -101,18 +101,50 @@
 
 
     </svg>
-    <!-- Nav bar or menu for desktop -->
-    <!-- Nav bar or menu for desktop -->
+    <!-- topbar -->
     <section class="topBar  w-full h-[60px] bg-blue/80 backdrop-blur-2xl  sticky top-0 transition-all z-[5]">
         <div class="w-full px-[10px] lg:px-4 flex justify-between items-center h-full  m-0">
             <aside class="h-full ">
                 <ul
                     class=" hidden md:flex  items-center  font-dana-md text-gray-50 [&>li]:h-full [&>li]:flex [&>li]:justify-center [&>li]:items-center h-full sm:[&>li]:px-2 lg:[&>li]:px-4 ">
+
                     <li><a class="simpleHover " href="./index.html">
                             صفحه اصلی</a></li>
+
                     <span class="block w-px h-[70%] bg-gray-50/70 "></span>
+
                     <li><a class="simpleHover" href="./index.html#aboutSection">درباره ما</a></li>
-                    <li><a class="simpleHover" href="./index.html#automation">اتوماسیون شهر بازی</a></li>
+
+                    <li class="md:text-xs lg:text-base relative group"><a
+                            class="simpleHover flex items-center cursor-pointer">اتوماسیون ها<svg class="w-5 h-5">
+                                <use href="#arrowLeft"></use>
+                            </svg></a>
+                        <ul class="ulChilde ">
+                            <li class="liP">
+                                <div class="flex gap-x-1 items-center w-full">
+                                    <a href="./index.html#auto-amusment" class="max-w-[85%] block">
+                                        اتوماسیون شهر بازی
+                                    </a>
+                                    <svg class="w-5 h-5 ml-1">
+                                        <use href="#arrowLeft"></use>
+                                    </svg>
+                                </div>
+
+                            </li>
+                            <li class="liP">
+                                <div class="flex gap-x-1 items-center w-full">
+                                    <a href="./index.html#auto-amusment-home" class="max-w-[85%] block">
+                                        اتوماسیون خانه بازی
+                                    </a>
+                                    <svg class="w-5 h-5 ml-1">
+                                        <use href="#arrowLeft"></use>
+                                    </svg>
+                                </div>
+
+                            </li>
+                        </ul>
+                    </li>
+
                     <li class="md:text-xs lg:text-base relative group"><a
                             class="simpleHover flex items-center cursor-pointer">محصولات<svg class="w-5 h-5">
                                 <use href="#arrowLeft"></use>
@@ -160,21 +192,6 @@
                                 </div>
 
                             </li>
-                            <!-- <li class="liP">
-                                <div class="flex gap-x-1 items-center w-full">
-                                    <a href="prd5.html" class="max-w-[85%] block">
-                                        نرم‌افزار صندوق
-
-                                    </a>
-                                    <svg class="w-5 h-5 ml-1">
-                                        <use href="#arrowLeft"></use>
-                                    </svg>
-                                </div>
-
-                            </li> -->
-
-
-
                         </ul>
                     </li>
                     <li><a class="simpleHover" href="./index.html#serviseSection">خدمات</a></li>
@@ -191,7 +208,7 @@
                 </div>
             </aside>
             <!--Logo  -->
-            <asidei class="font-dana-md flex items-center gap-x-2">
+            <aside class="font-dana-md flex items-center gap-x-2">
                 <form class="hidden md:flex items-center gap-x-1 relative">
                     <!-- Search button Desktop -->
                     <button type="submit"
@@ -212,10 +229,10 @@
                     <h1 class="md:text-xs lg:text-sm">آوات صنعت</h1>
                     <img class="w-14 md:w-12 lg:w-16" src="./images/Logo.png" alt="">
                 </a>
-            </asidei>
+            </aside>
         </div>
     </section>
-    <!-- side bar is for mobile -->
+    <!-- Menu Side bar -->
     <aside id="sideBarMobile"
         class="fixed top-0 right-0 w-[250px] h-screen overflow-y-auto bg-gray-50 z-50 font-dana-md closedMenu transition-all">
         <!-- Header side bar -->
@@ -231,7 +248,6 @@
         </div>
         <!-- Body side bar -->
         <div>
-
             <ul id="ulMobile"
                 class="px-3 [&>li>a]:py-1.5 [&>li]:py-2 [&>li>.p]:py-2 [&>li>a]:flex text-gray-600 divide-y-2 ">
                 <!-- Search Input mobile -->
@@ -241,11 +257,14 @@
                 </form>
                 <li><a class="text-blue " href="./index.html">
                         صفحه اصلی</a></li>
-                <li><a class="active:text-blue transition-all" href="./index.html#aboutSection">درباره ما</a></li>
-                <li><a class="active:text-blue transition-all" href="./index.html#automation">اتوماسیون شهر بازی</a>
+                <li><a class="active:text-blue transition-all" href="#aboutSection">درباره ما</a></li>
+                <li><a class="active:text-blue transition-all" href="./index.html#auto-amusment">اتوماسیون شهر بازی</a>
                 </li>
-                <li>
-                    <p id="productLi" class="active:text-blue transition-all flex justify-between items-center p">
+                <li><a class="active:text-blue transition-all" href="./index.html#auto-amusment-home">اتوماسیون شهر بازی
+                        و خانه
+                        بازی</a></li>
+                <li id="productLi" class="select-none cursor-pointer">
+                    <p class="active:text-blue transition-all flex justify-between items-center p">
                         محصولات
                         <svg class="w-5 h-5">
                             <use href="#arrowLeft"></use>
@@ -263,10 +282,10 @@
                                 </svg>
                             </div>
                             <!-- <ul id="ul" class=" text-gray-50 p-2 border-r hidden mb-2">
-                                <li>
-                                    <p> طراحی بردهای کنترلی شهربازی ناژوان و طراحی بردهای کنترلی شهربازی آبشار </p>
-                                </li>
-                            </ul> -->
+                                    <li>
+                                        <p> طراحی بردهای کنترلی شهربازی ناژوان و طراحی بردهای کنترلی شهربازی آبشار </p>
+                                    </li>
+                                </ul> -->
                         </li>
                         <li>
                             <div class="flex items-center justify-between ">
@@ -278,10 +297,10 @@
                                 </svg>
                             </div>
                             <!-- <ul id="ul" class=" text-gray-50 p-2 border-r hidden mb-2">
-                                <li>
-                                    <p> طراحی بردهای کنترلی شهربازی ناژوان و طراحی بردهای کنترلی شهربازی آبشار </p>
-                                </li>
-                            </ul> -->
+                                    <li>
+                                        <p> طراحی بردهای کنترلی شهربازی ناژوان و طراحی بردهای کنترلی شهربازی آبشار </p>
+                                    </li>
+                                </ul> -->
                         </li>
                         <li>
                             <div class="flex items-center justify-between ">
@@ -293,10 +312,10 @@
                                 </svg>
                             </div>
                             <!-- <ul id="ul" class=" text-gray-50 p-2 border-r hidden mb-2">
-                                <li>
-                                    <p> طراحی بردهای کنترلی شهربازی ناژوان و طراحی بردهای کنترلی شهربازی آبشار </p>
-                                </li>
-                            </ul> -->
+                                    <li>
+                                        <p> طراحی بردهای کنترلی شهربازی ناژوان و طراحی بردهای کنترلی شهربازی آبشار </p>
+                                    </li>
+                                </ul> -->
                         </li>
                         <li>
                             <div class="flex items-center justify-between ">
@@ -308,38 +327,23 @@
                                 </svg>
                             </div>
                             <!-- <ul id="ul" class=" text-gray-50 p-2 border-r hidden mb-2">
-                                <li>
-                                    <p> طراحی بردهای کنترلی شهربازی ناژوان و طراحی بردهای کنترلی شهربازی آبشار </p>
-                                </li>
-                            </ul> -->
+                                    <li>
+                                        <p> طراحی بردهای کنترلی شهربازی ناژوان و طراحی بردهای کنترلی شهربازی آبشار </p>
+                                    </li>
+                                </ul> -->
                         </li>
-                        <!-- <li>
-                            <div class="flex items-center justify-between ">
-                                <a href="./prd5.html" class="py-3 block max-w-[85%]">
-                                    نرم‌افزار صندوق
 
-                                </a>
-                                <svg class="w-5 h-5">
-                                    <use href="#arrowLeft"></use>
-                                </svg>
-                            </div>
-                            <ul id="ul" class=" text-gray-50 p-2 border-r hidden mb-2">
-                                <li>
-                                    <p> طراحی بردهای کنترلی شهربازی ناژوان و طراحی بردهای کنترلی شهربازی آبشار </p>
-                                </li>
-                            </ul>
-                        </li> -->
 
 
                     </ul>
                 </li>
-                <li><a class="active:text-blue transition-all" href="./index.html#serviseSection">خدمات</a>
+                <li><a class="active:text-blue transition-all" href="#serviseSection">خدمات</a>
                 </li>
-                <li><a class="active:text-blue transition-all" href="./index.html#projectSection">پروژه های انجام
-                        شده</a></li>
-                <li><a class="active:text-blue transition-all" href="./index.html#contactSection">ارتباط با ما</a></li>
+                <li><a class="active:text-blue transition-all" href="#projectSection">پروژه های انجام شده</a></li>
+                <li><a class="active:text-blue transition-all" href="#contactSection">ارتباط با ما</a></li>
                 <a class=" flex items-center gap-x-2 bg-blue/80 text-white  p-3 rounded-lg border-miniSky border"
-                    href="tel:+989133163328">تلفن تما
+                    href="tel:+989133163328">
+                    تلفن تماس
                     <svg class="w-5 h-5 animate-pulse">
                         <use href="#phone"></use>
                     </svg>
