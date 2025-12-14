@@ -314,62 +314,6 @@
     @apply backdrop-blur-sm transition-all
   }
 
-  .officBox {
-    @apply bg-blue rounded-xl overflow-hidden shadow;
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: cover;
-    user-select: none;
-  }
-
-  .officBoximage1 {
-    background-image: url(../images/malakShahr.jpg);
-  }
-
-  .officBoximage2 {
-    background-image: url(../images/kashan.jpg);
-  }
-
-  .officBoximage3 {
-    background-image: url(../images/pirozy.jfif);
-  }
-
-  .officBoximage4 {
-    background-image: url(../images/abshar.png);
-  }
-
-  .officBoximage5 {
-    background-image: url(../images/tamadoon.jpg);
-  }
-
-  .officBoximage6 {
-    background-image: url(../images/sepahanShahr.jpg);
-  }
-
-  .officBoximage7 {
-    background-image: url(../images/shahinShahr.webp);
-  }
-
-  .officBoximage8 {
-    background-image: url(../images/gazBarkhovar.png);
-  }
-
-  .officBoximage9 {
-    background-image: url(../images/saraRod.png);
-  }
-
-  .officBoximage10 {
-    background-image: url(../images/starmal.png);
-  }
-
-  .officBoximage11 {
-    background-image: url(../images/activGame.jpg);
-  }
-
-  .officBoximage12 {
-    background-image: url(../images/baharestan.jpg);
-  }
-
   .parkin_gBackgroundImage {
     background-image: url(../images/parking.jpg);
 
