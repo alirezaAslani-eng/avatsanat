@@ -65,64 +65,160 @@ for (let i = 0; i < liChildes.length; i++) {
   };
 }
 
-
-
 /**
  * This Scope of code is responsible for generating automation silders
  */
 {
   const automationsData = [
-    { text: "هوشمندسازی شهربازی ملک شهر اصفهان", imageSrc: "images/malakShahr.jpg" },
-    { text: "هوشمندسازی مجموعه تفریحی ماه شهر نور", imageSrc: "images/malakShahr.jpg" },
-    { text: "هوشمندسازی شهربازی آمازون پلازا کرمانشاه", imageSrc: "images/malakShahr.jpg" },
-    { text: "هوشمندسازی شهربازی سمین پارک شهریار", imageSrc: "images/malakShahr.jpg" },
-    { text: "هوشمندسازی پارک ساحلی خمینی شهر", imageSrc: "images/malakShahr.jpg" },
-    { text: "هوشمندسازی شهربازی هایپرمی اصفهان", imageSrc: "images/malakShahr.jpg" },
-    { text: "هوشمندسازی شهربازی دهکده ساحلی چادگان", imageSrc: "images/malakShahr.jpg" },
-    { text: "هوشمندسازی پارک مدنی کاشان", imageSrc: "images/malakShahr.jpg" },
-    { text: "هوشمندسازی پارک پیروزی خمینی شهر", imageSrc: "images/pirozy.jfif" },
-    { text: "هوشمندسازی آبشار اصفهان", imageSrc: "images/abshar.png" },
-    { text: "هوشمندسازی پل تمدن اصفهان", imageSrc: "images/tamadoon.jpg" },
-    { text: "هوشمندسازی پارک بادی سپاهان شهر", imageSrc: "images/sepahanShahr.jpg" },
-    { text: "هوشمندسازی بوستان مادر شاهین شهر", imageSrc: "images/shahinShahr.webp" },
-    { text: "هوشمندسازی شهربازی قلعه شادی گز و برخوار", imageSrc: "images/gazBarkhovar.webp" },
-    { text: "هوشمندسازی سرارود مبارکه", imageSrc: "images/saraRod.png" },
-    { text: "هوشمندسازی استارمال اهواز", imageSrc: "images/starmal.png" },
-    { text: "هوشمندسازی اکتیویت گیم سنتر اصفهان", imageSrc: "images/activGame.jpg" },
-    { text: "هوشمندسازی بهارستان اصفهان", imageSrc: "images/baharestan.jpg" },
-    { text: "هوشمندسازی متاورس اراک", imageSrc: "images/parking.jpg" },
-    { text: "هوشمندسازی شهربازی برج مروارید مشهد", imageSrc: "images/malakShahr.jpg" },
+    {
+      where: "ملک شهر اصفهان",
+      text: "هوشمندسازی شهربازی",
+      imageSrc: "images/malakShahr.jpg",
+    },
+    {
+      where: "ماه شهر نور",
+      text: "هوشمندسازی مجموعه تفریحی",
+      imageSrc: "images/malakShahr.jpg",
+    },
+    {
+      where: "آمازون پلازا کرمانشاه",
+      text: "هوشمندسازی شهربازی",
+      imageSrc: "images/malakShahr.jpg",
+    },
+    {
+      where: "سمین پارک شهریار",
+      text: "هوشمندسازی شهربازی",
+      imageSrc: "images/malakShahr.jpg",
+    },
+    {
+      where: "پارک ساحلی خمینی شهر",
+      text: "هوشمندسازی",
+      imageSrc: "images/malakShahr.jpg",
+    },
+    {
+      where: "هایپرمی اصفهان",
+      text: "هوشمندسازی شهربازی",
+      imageSrc: "images/malakShahr.jpg",
+    },
+    {
+      where: "دهکده ساحلی چادگان",
+      text: "هوشمندسازی شهربازی",
+      imageSrc: "images/malakShahr.jpg",
+    },
+    {
+      where: "پارک مدنی کاشان",
+      text: "هوشمندسازی",
+      imageSrc: "images/malakShahr.jpg",
+    },
+    {
+      where: "پارک پیروزی خمینی شهر",
+      text: "هوشمندسازی",
+      imageSrc: "images/pirozy.jfif",
+    },
+    {
+      where: "آبشار اصفهان",
+      text: "هوشمندسازی",
+      imageSrc: "images/abshar.png",
+    },
+    {
+      where: "پل تمدن اصفهان",
+      text: "هوشمندسازی",
+      imageSrc: "images/tamadoon.jpg",
+    },
+    {
+      where: "پارک بادی سپاهان شهر",
+      text: "هوشمندسازی",
+      imageSrc: "images/sepahanShahr.jpg",
+    },
+    {
+      where: "بوستان مادر شاهین شهر",
+      text: "هوشمندسازی",
+      imageSrc: "images/shahinShahr.webp",
+    },
+    {
+      where: "قلعه شادی گز و برخوار",
+      text: "هوشمندسازی شهربازی",
+      imageSrc: "images/gazBarkhovar.webp",
+    },
+    {
+      where: "سرارود مبارکه",
+      text: "هوشمندسازی",
+      imageSrc: "images/saraRod.png",
+    },
+    {
+      where: "استارمال اهواز",
+      text: "هوشمندسازی",
+      imageSrc: "images/starmal.png",
+    },
+    {
+      where: "اکتیویت گیم سنتر اصفهان",
+      text: "هوشمندسازی",
+      imageSrc: "images/activGame.jpg",
+    },
+    {
+      where: "بهارستان اصفهان",
+      text: "هوشمندسازی",
+      imageSrc: "images/baharestan.jpg",
+    },
+    {
+      where: "متاورس اراک",
+      text: "هوشمندسازی",
+      imageSrc: "images/parking.jpg",
+    },
+    {
+      where: "برج مروارید مشهد",
+      text: "هوشمندسازی شهربازی",
+      imageSrc: "images/malakShahr.jpg",
+    },
+  ];
 
-  ]
   const automationsHomeData = [
-    { text: "هوشمندسازی خانه بازی سرزمین آکا اصفهان", imageSrc: "images/malakShahr.jpg" },
-    { text: "هوشمندسازی خانه بازی کیندرلند مشهد", imageSrc: "images/malakShahr.jpg" },
-    { text: "هوشمندسازی خانه بازی شادسر رامسر", imageSrc: "images/malakShahr.jpg" },
-  ]
-  const automationCardTemp = $("automation-card-temp")
+    {
+      where: "سرزمین آکا اصفهان",
+      text: "هوشمندسازی خانه بازی",
+      imageSrc: "images/malakShahr.jpg",
+    },
+    {
+      where: "کیندرلند مشهد",
+      text: "هوشمندسازی خانه بازی",
+      imageSrc: "images/malakShahr.jpg",
+    },
+    {
+      where: "شادسر رامسر",
+      text: "هوشمندسازی خانه بازی",
+      imageSrc: "images/malakShahr.jpg",
+    },
+  ];
 
-  const autoMationFragMent = document.createDocumentFragment()
-  const autoMationHomFragMent = document.createDocumentFragment()
+  const automationCardTemp = $("automation-card-temp");
 
-  const generateAutomationSlide = ({ text, imageSrc }) => {
-    // swiper-slide 
-    const slide = document.createElement("div")
-    slide.setAttribute("class", "swiper-slide")
-    slide.style = "width:fit-content;"
+  const autoMationFragMent = document.createDocumentFragment();
+  const autoMationHomFragMent = document.createDocumentFragment();
+
+  const generateAutomationSlide = ({ text, imageSrc, where }) => {
+    // swiper-slide
+    const slide = document.createElement("div");
+    slide.setAttribute("class", "swiper-slide");
+    slide.style = "width:fit-content;";
     // clone template
-    const AutomationCard = automationCardTemp.content.cloneNode(true)
-    AutomationCard.querySelector("#centeral-text").innerHTML = text
-    AutomationCard.querySelector("#image").src = imageSrc
-    // append template 
-    slide.appendChild(AutomationCard)
-    return slide
-  }
-  automationsData.forEach(({ imageSrc, text }) => {
-    autoMationFragMent.append(generateAutomationSlide({ imageSrc, text }))
-  })
-  automationsHomeData.forEach(({ imageSrc, text }) => {
-    autoMationHomFragMent.append(generateAutomationSlide({ imageSrc, text }))
-  })
-  $("automation-amusment-home-swiper").appendChild(autoMationHomFragMent)
-  $("automation-amusment-swiper").appendChild(autoMationFragMent)
+    const AutomationCard = automationCardTemp.content.cloneNode(true);
+    AutomationCard.querySelector("#line-1").innerHTML = text;
+    AutomationCard.querySelector("#line-2").innerHTML = where;
+    AutomationCard.querySelector("#image").src = imageSrc;
+    // append template
+    slide.appendChild(AutomationCard);
+    return slide;
+  };
+  automationsData.forEach(({ imageSrc, text, where }) => {
+    autoMationFragMent.append(
+      generateAutomationSlide({ imageSrc, text, where })
+    );
+  });
+  automationsHomeData.forEach(({ imageSrc, text, where }) => {
+    autoMationHomFragMent.append(
+      generateAutomationSlide({ imageSrc, text, where })
+    );
+  });
+  $("automation-amusment-home-swiper").appendChild(autoMationHomFragMent);
+  $("automation-amusment-swiper").appendChild(autoMationFragMent);
 }
