@@ -73,42 +73,42 @@ for (let i = 0; i < liChildes.length; i++) {
     {
       where: "ملک شهر اصفهان",
       text: "هوشمندسازی شهربازی",
-      imageSrc: "images/malakShahr.jpg",
+      imageSrc: "images/malakshahr.jpg",
     },
     {
       where: "ماه شهر نور",
       text: "هوشمندسازی مجموعه تفریحی",
-      imageSrc: "images/malakShahr.jpg",
+      imageSrc: "images/mahshahrnor.jpg",
     },
     {
       where: "آمازون پلازا کرمانشاه",
       text: "هوشمندسازی شهربازی",
-      imageSrc: "images/malakShahr.jpg",
+      imageSrc: "images/amazonplaza.jpg",
     },
     {
       where: "سمین پارک شهریار",
       text: "هوشمندسازی شهربازی",
-      imageSrc: "images/malakShahr.jpg",
+      imageSrc: "images/samin.jpg",
     },
     {
       where: "پارک ساحلی خمینی شهر",
       text: "هوشمندسازی",
-      imageSrc: "images/malakShahr.jpg",
+      imageSrc: "images/parksaheli.jpg",
     },
     {
       where: "هایپرمی اصفهان",
       text: "هوشمندسازی شهربازی",
-      imageSrc: "images/malakShahr.jpg",
+      imageSrc: "images/hyperme.jpg",
     },
     {
       where: "دهکده ساحلی چادگان",
       text: "هوشمندسازی شهربازی",
-      imageSrc: "images/malakShahr.jpg",
+      imageSrc: "images/chadegan.jpg",
     },
     {
       where: "پارک مدنی کاشان",
       text: "هوشمندسازی",
-      imageSrc: "images/malakShahr.jpg",
+      imageSrc: "images/kashan.jpg",
     },
     {
       where: "پارک پیروزی خمینی شهر",
@@ -163,12 +163,12 @@ for (let i = 0; i < liChildes.length; i++) {
     {
       where: "متاورس اراک",
       text: "هوشمندسازی",
-      imageSrc: "images/parking.jpg",
+      imageSrc: "images/metavers.jpg",
     },
     {
       where: "برج مروارید مشهد",
       text: "هوشمندسازی شهربازی",
-      imageSrc: "images/malakShahr.jpg",
+      imageSrc: "images/malakshahr.jpg",
     },
   ];
 
@@ -176,17 +176,17 @@ for (let i = 0; i < liChildes.length; i++) {
     {
       where: "سرزمین آکا اصفهان",
       text: "هوشمندسازی خانه بازی",
-      imageSrc: "images/malakShahr.jpg",
+      imageSrc: "images/aka.jpg",
     },
     {
       where: "کیندرلند مشهد",
       text: "هوشمندسازی خانه بازی",
-      imageSrc: "images/malakShahr.jpg",
+      imageSrc: "images/kinderland.jpg",
     },
     {
       where: "شادسر رامسر",
       text: "هوشمندسازی خانه بازی",
-      imageSrc: "images/malakShahr.jpg",
+      imageSrc: "images/shadsar.jpg",
     },
   ];
 
