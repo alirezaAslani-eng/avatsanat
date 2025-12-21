@@ -3,57 +3,33 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./style/output.css" />
     <title>آوات صنعت کیان | طراحی و تولید سیستم های هوشمند</title>
+    <link
+      rel="preload"
+      href="/fonts/PeydaWeb-Bold.woff"
+      as="font"
+      type="font/woff"
+      crossorigin
+    />
+    <link
+      rel="preload"
+      href="./fonts/DanaFaNum-Medium.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+    <link rel="preload" href="./images/1.webp" as="image" />
+    <link rel="preload" href="./images/download.webp" as="image" />
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
     />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
-      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <link rel="icon" href="./images/icon.jpg" />
-    <style>
-      .showInputSearch {
-        position: absolute !important;
-        left: 110%;
-        width: 200px;
-        animation: ShowInp ease 150ms forwards;
-      }
-
-      @keyframes ShowInp {
-        from {
-          width: 0;
-        }
-
-        to {
-          width: 200px;
-        }
-      }
-
-      .showLi ul {
-        display: block !important;
-      }
-
-      .box {
-        box-shadow: 0px -70px 80px inset rgba(0, 0, 0, 0.649);
-      }
-
-      @media (prefers-reduced-motion: reduce) {
-        * {
-          animation: none;
-          transition: none;
-        }
-      }
-    </style>
-  </head>
-  <!-- Automation card template -->
-  <template id="automation-card-temp">
-    <div class="aspect-[1/1] h-[250px] relative overflow-hidden rounded-xl cursor-grab">
+    <link rel="stylesheet" href="./style/output.css" />
+    <link rel="icon" href="./images/icon.jpg" /></head
+  ><template id="automation-card-temp"
+    ><div
+      class="aspect-[1/1] h-[250px] relative overflow-hidden rounded-xl cursor-grab"
+    >
       <div
         class="bg-black/50 w-full h-full absolute top-0 left-0 z-[2] flex justify-center items-center flex-col gap-1 text-center"
       >
@@ -63,11 +39,10 @@
       <img
         id="image"
         class="absolute w-full h-full top-0 left-0 object-cover"
-        alt=""
-      />
-    </div>
-  </template>
-
+        alt="automation pic"
+        loading="lazy"
+      /></div
+  ></template>
   <body>
     <svg class="hidden">
       <symbol
@@ -98,7 +73,6 @@
           d="M12.75 3.03v.568c0 .334.148.65.405.864l1.068.89c.442.369.535 1.01.216 1.49l-.51.766a2.25 2.25 0 0 1-1.161.886l-.143.048a1.107 1.107 0 0 0-.57 1.664c.369.555.169 1.307-.427 1.605L9 13.125l.423 1.059a.956.956 0 0 1-1.652.928l-.679-.906a1.125 1.125 0 0 0-1.906.172L4.5 15.75l-.612.153M12.75 3.031a9 9 0 0 0-8.862 12.872M12.75 3.031a9 9 0 0 1 6.69 14.036m0 0-.177-.529A2.25 2.25 0 0 0 17.128 15H16.5l-.324-.324a1.453 1.453 0 0 0-2.328.377l-.036.073a1.586 1.586 0 0 1-.982.816l-.99.282c-.55.157-.894.702-.8 1.267l.073.438c.08.474.49.821.97.821.846 0 1.598.542 1.865 1.345l.215.643m5.276-3.67a9.012 9.012 0 0 1-5.276 3.67m0 0a9 9 0 0 1-10.275-4.835M15.75 9c0 .896-.393 1.7-1.016 2.25"
         />
       </symbol>
-
       <symbol
         id="email"
         xmlns="http://www.w3.org/2000/svg"
@@ -113,7 +87,6 @@
           d="M16.5 12a4.5 4.5 0 1 1-9 0 4.5 4.5 0 0 1 9 0Zm0 0c0 1.657 1.007 3 2.25 3S21 13.657 21 12a9 9 0 1 0-2.636 6.364M16.5 12V8.25"
         />
       </symbol>
-
       <symbol
         id="location"
         xmlns="http://www.w3.org/2000/svg"
@@ -133,7 +106,6 @@
           d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1 1 15 0Z"
         />
       </symbol>
-
       <symbol
         id="arrow-l"
         xmlns="http://www.w3.org/2000/svg"
@@ -219,16 +191,11 @@
     </svg>
     <header class="sticky top-0 left-0 z-0 w-full h-[100svh]">
       <div class="backCover contentHeader">
-        <!-- prev Button -->
         <button
           class="swiper-button-next-costum hidden sm:block text-white bg-white/10 transition-all p-2 rounded-full active:translate-x-1"
         >
-          <svg class="w-8 h-8">
-            <use href="#arrow-r"></use>
-          </svg>
+          <svg class="w-8 h-8"><use href="#arrow-r"></use></svg>
         </button>
-
-        <!-- Title Company -->
         <section class="text-center">
           <h1
             class="flex flex-wrap justify-center items-center gap-2 font-py-bold text-3xl sm:text-5xl lg:text-6xl text-gray-50 animateUp px-2"
@@ -242,36 +209,25 @@
             طراحی و تولید سیستم های هوشمند
           </p>
         </section>
-        <!-- next Button -->
         <button
           class="swiper-button-prev-costum hidden sm:block text-white bg-white/10 transition-all p-2 rounded-full active:-translate-x-1"
         >
-          <svg class="w-8 h-8">
-            <use href="#arrow-l"></use>
-          </svg>
+          <svg class="w-8 h-8"><use href="#arrow-l"></use></svg>
         </button>
-        <!-- button for mobile -->
         <div
           class="flex sm:hidden justify-between items-center mt-5 w-full px-10"
         >
           <button
             class="swiper-button-next-costum text-white bg-white/10 transition-all p-2 rounded-full active:translate-x-1"
           >
-            <svg class="w-8 h-8">
-              <use href="#arrow-r"></use>
-            </svg>
-          </button>
-
-          <button
+            <svg class="w-8 h-8"><use href="#arrow-r"></use></svg></button
+          ><button
             class="swiper-button-prev-costum text-white bg-white/10 transition-all p-2 rounded-full active:translate-x-1"
           >
-            <svg class="w-8 h-8">
-              <use href="#arrow-l"></use>
-            </svg>
+            <svg class="w-8 h-8"><use href="#arrow-l"></use></svg>
           </button>
         </div>
       </div>
-      <!-- Created a simple banner by background-image -->
       <div class="swiper mySwiper">
         <div class="swiper-wrapper">
           <div class="swiper-slide">
@@ -279,7 +235,6 @@
               class="bg-banner h-screen w-full bg-no-repeat bg-cover backgroundxyCenter"
             ></div>
           </div>
-
           <div class="swiper-slide">
             <div
               class="bg-banner2 h-screen w-full bg-no-repeat bg-cover backgroundxyCenter"
@@ -288,9 +243,7 @@
         </div>
       </div>
     </header>
-
     <main id="homeSection" class="relative z-[1] bg-white">
-      <!-- topbar -->
       <section
         class="topBar w-full h-[60px] bg-blue/80 backdrop-blur-2xl sticky top-0 transition-all z-[5]"
       >
@@ -302,15 +255,12 @@
               class="hidden md:flex items-center font-dana-md text-gray-50 [&>li]:h-full [&>li]:flex [&>li]:justify-center [&>li]:items-center h-full sm:[&>li]:px-2 lg:[&>li]:px-4"
             >
               <li><a class="simpleHover" href="./index.html"> صفحه اصلی</a></li>
-
               <span class="block w-px h-[70%] bg-gray-50/70"></span>
-
               <li>
                 <a class="simpleHover" href="./index.html#aboutSection"
                   >درباره ما</a
                 >
               </li>
-
               <li class="md:text-xs lg:text-base relative group">
                 <a class="simpleHover flex items-center cursor-pointer"
                   >اتوماسیون ها<svg class="w-5 h-5">
@@ -320,9 +270,8 @@
                   <li class="liP">
                     <div class="flex gap-x-1 items-center w-full">
                       <a href="#auto-amusment" class="max-w-[85%] block">
-                        اتوماسیون شهر بازی
-                      </a>
-                      <svg class="w-5 h-5 ml-1">
+                        اتوماسیون شهر بازی </a
+                      ><svg class="w-5 h-5 ml-1">
                         <use href="#arrowLeft"></use>
                       </svg>
                     </div>
@@ -330,16 +279,14 @@
                   <li class="liP">
                     <div class="flex gap-x-1 items-center w-full">
                       <a href="#auto-amusment-home" class="max-w-[85%] block">
-                        اتوماسیون خانه بازی
-                      </a>
-                      <svg class="w-5 h-5 ml-1">
+                        اتوماسیون خانه بازی </a
+                      ><svg class="w-5 h-5 ml-1">
                         <use href="#arrowLeft"></use>
                       </svg>
                     </div>
                   </li>
                 </ul>
               </li>
-
               <li class="md:text-xs lg:text-base relative group">
                 <a class="simpleHover flex items-center cursor-pointer"
                   >محصولات<svg class="w-5 h-5">
@@ -349,9 +296,8 @@
                   <li class="liP">
                     <div class="flex gap-x-1 items-center w-full">
                       <a href="prd1.html" class="max-w-[85%] block"
-                        >استند فروش
-                      </a>
-                      <svg class="w-5 h-5 ml-1">
+                        >استند فروش </a
+                      ><svg class="w-5 h-5 ml-1">
                         <use href="#arrowLeft"></use>
                       </svg>
                     </div>
@@ -359,9 +305,8 @@
                   <li class="liP">
                     <div class="flex gap-x-1 items-center w-full">
                       <a href="prd2.html" class="max-w-[85%] block"
-                        >دستگاه کارتخوان شهربازی(کاهنده)
-                      </a>
-                      <svg class="w-5 h-5 ml-1">
+                        >دستگاه کارتخوان شهربازی(کاهنده) </a
+                      ><svg class="w-5 h-5 ml-1">
                         <use href="#arrowLeft"></use>
                       </svg>
                     </div>
@@ -369,9 +314,8 @@
                   <li class="liP">
                     <div class="flex gap-x-1 items-center w-full">
                       <a href="prd3.html" class="max-w-[85%] block">
-                        باجه شارژ سخت افزاری
-                      </a>
-                      <svg class="w-5 h-5 ml-1">
+                        باجه شارژ سخت افزاری </a
+                      ><svg class="w-5 h-5 ml-1">
                         <use href="#arrowLeft"></use>
                       </svg>
                     </div>
@@ -379,9 +323,8 @@
                   <li class="liP">
                     <div class="flex gap-x-1 items-center w-full">
                       <a href="prd4.html" class="max-w-[85%] block"
-                        >شارژ نرم‌افزاری
-                      </a>
-                      <svg class="w-5 h-5 ml-1">
+                        >شارژ نرم‌افزاری </a
+                      ><svg class="w-5 h-5 ml-1">
                         <use href="#arrowLeft"></use>
                       </svg>
                     </div>
@@ -409,7 +352,6 @@
                 >تلفن تماس</a
               >
             </ul>
-            <!-- menu icon for mobile -->
             <div id="menuBtnOpen" class="md:hidden h-full flex items-center">
               <svg
                 class="w-8 h-8 text-gray-50 active:translate-y-0.5 transition-all active:text-gray-200"
@@ -418,27 +360,24 @@
               </svg>
             </div>
           </aside>
-          <!--Logo  -->
           <aside class="font-dana-md flex items-center gap-x-2">
             <form class="hidden md:flex items-center gap-x-1 relative">
-              <!-- Search button Desktop -->
               <button
                 type="submit"
                 class="font-dana-sm text-sm bg-miniSky h-full p-2.5 rounded-lg hover:bg-miniSky/80 transition-all hidden 1212px:flex justify-center items-center text-gray-600"
               >
-                <i class="fa-solid fa-magnifying-glass"></i>
-              </button>
-              <!-- Search button show on < 1212px -->
-              <button
+                <i class="fa-solid fa-magnifying-glass"></i></button
+              ><button
                 type="button"
                 id="searchBtn"
                 class="font-dana-sm text-sm bg-miniSky h-full p-2.5 rounded-lg hover:bg-miniSky/80 transition-all flex 1212px:hidden justify-center items-center text-gray-600 active:translate-y-1 group"
               >
-                <i class="w-4 h-4 fa-solid fa-magnifying-glass"></i>
-                <i style="display: none" class="w-4 h-4 fa-solid fa-xmark"></i>
-              </button>
-              <!-- Search Input Desktop -->
-              <input
+                <i class="w-4 h-4 fa-solid fa-magnifying-glass"></i
+                ><i
+                  style="display: none"
+                  class="w-4 h-4 fa-solid fa-xmark"
+                ></i></button
+              ><input
                 class="transition-all p-2 text-sm rounded-lg outline-none hidden 1212px:block"
                 type="text"
                 name="search"
@@ -449,23 +388,20 @@
             <a
               href="./index.html"
               class="inline-flex items-center gap-x-1 text-gray-50"
-            >
-              <h1 class="md:text-xs lg:text-sm">آوات صنعت</h1>
+              ><h1 class="md:text-xs lg:text-sm">آوات صنعت</h1>
               <img
                 class="w-14 md:w-12 lg:w-16"
                 src="./images/Logo.png"
-                alt=""
-              />
-            </a>
+                alt="logo"
+                loading="lazy"
+            /></a>
           </aside>
         </div>
       </section>
-      <!-- Menu Side bar -->
       <aside
         id="sideBarMobile"
         class="fixed top-0 right-0 w-[250px] h-screen overflow-y-auto bg-gray-50 z-50 font-dana-md closedMenu transition-all"
       >
-        <!-- Header side bar -->
         <div
           class="header px-3 flex justify-between items-center bg-blue text-gray-50"
         >
@@ -476,16 +412,19 @@
           </aside>
           <aside class="flex items-center gap-x-1">
             <h1>آوات صنعت</h1>
-            <img class="w-14" src="./images/Logo.png" alt="" />
+            <img
+              class="w-14"
+              src="./images/Logo.png"
+              alt="logo"
+              loading="lazy"
+            />
           </aside>
         </div>
-        <!-- Body side bar -->
         <div>
           <ul
             id="ulMobile"
             class="px-3 [&>li>a]:py-1.5 [&>li]:py-2 [&>li>.p]:py-2 [&>li>a]:flex text-gray-600 divide-y-2"
           >
-            <!-- Search Input mobile -->
             <form class="flex items-center gap-x-1 justify-start mt-3">
               <input
                 autofocus
@@ -518,12 +457,8 @@
               <p
                 class="active:text-blue transition-all flex justify-between items-center p"
               >
-                محصولات
-                <svg class="w-5 h-5">
-                  <use href="#arrowLeft"></use>
-                </svg>
+                محصولات <svg class="w-5 h-5"><use href="#arrowLeft"></use></svg>
               </p>
-
               <ul
                 id="ulChildMobileMenu"
                 class="text-sm pr-3 pl-1 py-1 bg-blue/60 rounded-md hidden divide-y-[1px] text-gray-50"
@@ -532,61 +467,29 @@
                   <div class="flex items-center justify-between">
                     <a href="./prd1.html" class="py-3 block max-w-[85%]"
                       >استند فروش</a
-                    >
-                    <svg class="w-5 h-5">
-                      <use href="#arrowLeft"></use>
-                    </svg>
+                    ><svg class="w-5 h-5"><use href="#arrowLeft"></use></svg>
                   </div>
-                  <!-- <ul id="ul" class=" text-gray-50 p-2 border-r hidden mb-2">
-                                    <li>
-                                        <p> طراحی بردهای کنترلی شهربازی ناژوان و طراحی بردهای کنترلی شهربازی آبشار </p>
-                                    </li>
-                                </ul> -->
                 </li>
                 <li>
                   <div class="flex items-center justify-between">
                     <a href="./prd2.html" class="py-3 block max-w-[85%]">
-                      دستگاه کارتخوان شهربازی(کاهنده)
-                    </a>
-                    <svg class="w-5 h-5">
-                      <use href="#arrowLeft"></use>
-                    </svg>
+                      دستگاه کارتخوان شهربازی(کاهنده) </a
+                    ><svg class="w-5 h-5"><use href="#arrowLeft"></use></svg>
                   </div>
-                  <!-- <ul id="ul" class=" text-gray-50 p-2 border-r hidden mb-2">
-                                    <li>
-                                        <p> طراحی بردهای کنترلی شهربازی ناژوان و طراحی بردهای کنترلی شهربازی آبشار </p>
-                                    </li>
-                                </ul> -->
                 </li>
                 <li>
                   <div class="flex items-center justify-between">
                     <a href="./prd3.html" class="py-3 block max-w-[85%]">
-                      باجه شارژ سخت افزاری
-                    </a>
-                    <svg class="w-5 h-5">
-                      <use href="#arrowLeft"></use>
-                    </svg>
+                      باجه شارژ سخت افزاری </a
+                    ><svg class="w-5 h-5"><use href="#arrowLeft"></use></svg>
                   </div>
-                  <!-- <ul id="ul" class=" text-gray-50 p-2 border-r hidden mb-2">
-                                    <li>
-                                        <p> طراحی بردهای کنترلی شهربازی ناژوان و طراحی بردهای کنترلی شهربازی آبشار </p>
-                                    </li>
-                                </ul> -->
                 </li>
                 <li>
                   <div class="flex items-center justify-between">
                     <a href="./prd4.html" class="py-3 block max-w-[85%]">
-                      باجه شارژ نرم افزاری
-                    </a>
-                    <svg class="w-5 h-5">
-                      <use href="#arrowLeft"></use>
-                    </svg>
+                      باجه شارژ نرم افزاری </a
+                    ><svg class="w-5 h-5"><use href="#arrowLeft"></use></svg>
                   </div>
-                  <!-- <ul id="ul" class=" text-gray-50 p-2 border-r hidden mb-2">
-                                    <li>
-                                        <p> طراحی بردهای کنترلی شهربازی ناژوان و طراحی بردهای کنترلی شهربازی آبشار </p>
-                                    </li>
-                                </ul> -->
                 </li>
               </ul>
             </li>
@@ -610,15 +513,11 @@
               href="tel:+989133163328"
             >
               تلفن تماس
-              <svg class="w-5 h-5 animate-pulse">
-                <use href="#phone"></use>
-              </svg>
-            </a>
+              <svg class="w-5 h-5 animate-pulse"><use href="#phone"></use></svg
+            ></a>
           </ul>
         </div>
       </aside>
-
-      <!-- (About us Section) -->
       <section
         id="aboutSection"
         class="container mt-10 sm:mt-20 flex justify-start"
@@ -626,15 +525,14 @@
         <div
           class="flex lg:flex-row lg:gap-5 items-center justify-center grd p-3 sm:p-5 rounded-2xl md:w-[100%]"
         >
-          <!-- Image of about section -->
           <aside class="scrollEffBottomByDelay1">
             <img
               class="hidden lg:block lg:max-w-[550px] rounded-2xl"
               src="./images/aboutUs.jpg"
-              alt=""
+              alt="pic"
+              loading="lazy"
             />
           </aside>
-          <!-- Txet of about secton-->
           <aside class="scrollEffBottomByDelay3 mt-5 md:mt-0">
             <div class="flex items-start flex-col">
               <h3 class="title text-right mt-0">درباره شرکت</h3>
@@ -658,8 +556,6 @@
           </aside>
         </div>
       </section>
-
-      <!-- why chose us section -->
       <section
         id="aboutSection"
         class="container mt-10 sm:mt-20 flex justify-end"
@@ -667,8 +563,6 @@
         <div
           class="flex lg:flex-row lg:gap-5 items-center justify-center grd p-3 sm:p-5 rounded-2xl md:w-[100%]"
         >
-          <!-- Txet of  secton-->
-
           <aside class="scrollEffBottomByDelay3 mt-5 md:mt-0">
             <div class="flex items-start flex-col gap-x-3">
               <h3 class="title text-right mt-0">چرا آوات صنعت کیان؟</h3>
@@ -689,25 +583,20 @@
               </span>
             </p>
           </aside>
-          <!-- Image of  section -->
-
           <aside class="scrollEffBottomByDelay1">
             <img
               class="hidden lg:block lg:max-w-[550px] rounded-2xl"
               src="./images/why.jpg"
-              alt=""
+              alt="pic"
+              loading="lazy"
             />
           </aside>
         </div>
       </section>
-
-      <!-- clickable Backcover -->
       <div
         id="backCoverBlur"
         class="hidden fixed top-0 right-0 w-full h-screen bg-black/50 backdrop-blur-lg z-[25]"
       ></div>
-
-      <!-- (Automation section) -->
       <h3 id="auto-amusment" class="title text-2xl text-gray-700">
         اتوماسیون شهربازی
       </h3>
@@ -769,7 +658,6 @@
           </div>
         </aside>
       </section>
-
       <h3 id="auto-amusment-home" class="title text-2xl text-gray-700">
         اتوماسیون خانه بازی
       </h3>
@@ -799,11 +687,8 @@
           </div>
         </aside>
       </section>
-
-      <!-----Servis Boxses------>
       <h1 id="serviseSection" class="scrollEffBottom title">خدمات شرکت</h1>
       <span class="w-[70%] h-px bg-gray-500/40 block my-3 mx-auto"></span>
-
       <section class="container mt-10 sm:mt-20">
         <section
           class="grid md:flex md:justify-center md:items-center md:flex-wrap lg:grid lg:grid-cols-3 gap-5 mb-5"
@@ -877,13 +762,10 @@
           </div>
         </section>
       </section>
-
-      <!-- Runed projects section -->
       <h3 id="projectSection" class="title text-2xl text-gray-700">
         چه کسانی به ما اعتماد کرده اند !
       </h3>
       <span class="w-[70%] h-px bg-gray-500/40 block my-3 mx-auto"></span>
-      <!-- Game city Automation -->
       <section class="container mt-0 scrollEffBottomByDelay3">
         <div class="mx-auto overflow-hidden">
           <h1
@@ -896,28 +778,20 @@
               id="automation-amusment-swiper"
               style="width: fit-content !important"
               class="swiper-wrapper"
-            >
-              <!-- slides will generate here  -->
-            </div>
+            ></div>
             <div
               class="nextBtn2 active:bg-black/20 transition-all absolute cursor-pointer z-[2] top-[60%] backdrop-blur-xl right-[10px] rotate-180 bg-blue/50 rounded-full text-gray-50 p-1 active:translate-y-1"
             >
-              <svg class="w-10 h-10">
-                <use href="#arrowLeft"></use>
-              </svg>
+              <svg class="w-10 h-10"><use href="#arrowLeft"></use></svg>
             </div>
             <div
               class="prevBtn2 active:bg-black/20 transition-all absolute cursor-pointer z-[2] top-[60%] backdrop-blur-xl left-[10px] bg-blue/50 rounded-full text-gray-50 p-1 active:translate-y-1"
             >
-              <svg class="w-10 h-10">
-                <use href="#arrowLeft"></use>
-              </svg>
+              <svg class="w-10 h-10"><use href="#arrowLeft"></use></svg>
             </div>
           </div>
         </div>
       </section>
-
-      <!-- Game city and home Automation -->
       <section class="container mt-0 scrollEffBottomByDelay3">
         <div class="mx-auto overflow-hidden">
           <h1
@@ -930,27 +804,20 @@
               id="automation-amusment-home-swiper"
               style="width: fit-content !important"
               class="swiper-wrapper"
-            >
-              <!-- slides will generate here  -->
-            </div>
+            ></div>
             <div
               class="nextBtn3 active:bg-black/20 transition-all absolute cursor-pointer z-[2] top-[60%] backdrop-blur-xl right-[10px] rotate-180 bg-blue/50 rounded-full text-gray-50 p-1 active:translate-y-1"
             >
-              <svg class="w-10 h-10">
-                <use href="#arrowLeft"></use>
-              </svg>
+              <svg class="w-10 h-10"><use href="#arrowLeft"></use></svg>
             </div>
             <div
               class="prevBtn3 active:bg-black/20 transition-all absolute cursor-pointer z-[2] top-[60%] backdrop-blur-xl left-[10px] bg-blue/50 rounded-full text-gray-50 p-1 active:translate-y-1"
             >
-              <svg class="w-10 h-10">
-                <use href="#arrowLeft"></use>
-              </svg>
+              <svg class="w-10 h-10"><use href="#arrowLeft"></use></svg>
             </div>
           </div>
         </div>
       </section>
-      <!-- Parking Automation -->
       <section class="container mt-10 scrollEffBottomByDelay3">
         <div class="mx-auto overflow-hidden">
           <h1
@@ -964,15 +831,11 @@
                 <p class="titleText">
                   هوشمندسازی پارکینگ عمومی بوعلی خمینی شهر
                 </p>
-                <!-- <p class="childeText">
-                                    هوشمندسازی پارکینگ عمومی بوعلی خمینی شهر
-                                </p> -->
               </div>
             </div>
           </div>
         </div>
       </section>
-      <!-- control board design -->
       <section class="container mt-10 scrollEffBottomByDelay3">
         <div class="mx-auto overflow-hidden">
           <h1
@@ -980,43 +843,32 @@
           >
             طراحی برد کنترلی
           </h1>
-
           <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
             <div class="box electronicBoard1_gBackgroundImage">
               <div>
                 <p class="titleText">
                   طراحی بردهای کنترلی شهربازی ناژوان و شهربازی آبشار
                 </p>
-                <!-- <p class="childeText">
-                                    هوشمندسازی پارکینگ عمومی بوعلی خمینی شهر
-                                </p> -->
               </div>
             </div>
-
             <div class="box electronicBoard2_gBackgroundImage">
               <div>
                 <p class="titleText">
                   طراحی سیستم کنترل هوشمند اتاق سرور دانشگاه آزاد خمینی شهر
                 </p>
-                <!-- <p class="childeText">
-                                    هوشمندسازی پارکینگ عمومی بوعلی خمینی شهر
-                                </p> -->
               </div>
             </div>
           </div>
         </div>
       </section>
-
-      <!-- last section is a picture -->
-
       <div class="mt-10 md:mt-20 text-center scrollEffBottomByDelay1">
         <img
           class="w-full sm:max-w-[500px] mx-auto block shadow-lg"
           src="./images/photo.jpg"
-          alt=""
+          alt="pic"
+          loading="lazy"
         />
       </div>
-      <!-- Footer section or contact me sectuion -->
       <footer id="footer" class="relative z-[1] bg-gray-800 mt-20">
         <div id="contactSection" class="container py-10 sm:py-20">
           <div class="lg:flex items-start gap-20">
@@ -1025,7 +877,6 @@
                 جهت ارتباط لطفا فرم زیر را ارسال کنید
               </h3>
               <div class="mb-10 lg:mb-0 mt-10">
-                <!-- form -->
                 <div class="form-container mx-auto">
                   <form class="form">
                     <div
@@ -1036,8 +887,7 @@
                           for="emaiInput"
                           class="font-dana-md text-gray-300"
                           >آدرس ایمیل</label
-                        >
-                        <input
+                        ><input
                           id="emaiInput"
                           class="w-full sm:w-auto block"
                           type="text"
@@ -1047,8 +897,7 @@
                       <div class="form-group w-full sm:w-auto">
                         <label for="fullname" class="font-dana-md text-gray-300"
                           >نام و نام خانوادگی</label
-                        >
-                        <input
+                        ><input
                           id="fullname"
                           class="w-full sm:w-auto"
                           type="text"
@@ -1059,16 +908,17 @@
                     <div class="form-group">
                       <label for="subject" class="font-dana-md text-gray-300"
                         >مضوع</label
-                      >
-                      <input type="text" name="subject" />
+                      ><input type="text" name="subject" />
                     </div>
-
                     <div class="form-group text-gray-50">
                       <label for="textarea"
                         >پیام شما مهم است, لطفا بنویسید !</label
-                      >
-                      <textarea name="textarea" rows="10" cols="50" required="">
-                      </textarea>
+                      ><textarea
+                        name="textarea"
+                        rows="10"
+                        cols="50"
+                        required=""
+                      ></textarea>
                     </div>
                     <button
                       class="text-gray-50 font-dana-md font-medium form-submit-btn transition-all"
@@ -1080,15 +930,11 @@
                 </div>
               </div>
             </section>
-
             <section>
               <h3
                 class="flex items-center gap-x-2.5 font-py-md text-gray-50 text-2xl mx-auto lg:mx-0 mb-2 w-fit"
               >
-                تماس با ما
-                <svg class="w-6 h-6">
-                  <use href="#phone"></use>
-                </svg>
+                تماس با ما <svg class="w-6 h-6"><use href="#phone"></use></svg>
               </h3>
               <div
                 class="font-dana-md text-center lg:text-right text-gray-100 text-lg lg:border-r space-y-4"
@@ -1101,8 +947,7 @@
                 <a class="block lg:mr-4" href="mailto:info@avatsanatco.ir"
                   >آدرس ایمیل:
                   <span class="hover:text-blue">info@avatsanatco.ir</span></a
-                >
-                <a class="block lg:mr-4" href=""
+                ><a class="block lg:mr-4" href=""
                   >آدرس اینستاگرم:
                   <span class="hover:text-blue">avatsanatco</span></a
                 >
@@ -1111,7 +956,12 @@
                 id="Social"
                 class="flex items-center mt-10 mx-auto lg:mx-0 w-fit p-3 rounded-xl gap-x-1"
               >
-                <img class="w-[60px] h-[60px]" src="./images/Logo.png" alt="" />
+                <img
+                  class="w-[60px] h-[60px]"
+                  src="./images/Logo.png"
+                  alt="pic"
+                  loading="lazy"
+                />
                 <h1 class="text-gray-100 text-xl font-dana-md">آوات صنعت</h1>
               </div>
               <div>
@@ -1122,38 +972,32 @@
                     class="socialContainer containerTwo"
                     href="https://eitaa.com/avatsanatkian"
                     target="_blank"
-                  >
-                    <svg class="w-[17.5px] h-5">
-                      <use href="#eta"></use>
-                    </svg>
-                  </a>
-                  <a
+                    ><svg class="w-[17.5px] h-5">
+                      <use href="#eta"></use></svg></a
+                  ><a
                     class="socialContainer containerTwo"
                     href="https://www.instagram.com/Avatsanatkian"
                     target="_blank"
-                  >
-                    <i class="fa-brands fa-instagram" aria-hidden="true"></i>
-                  </a>
-                  <a
+                    ><i
+                      class="fa-brands fa-instagram"
+                      aria-hidden="true"
+                    ></i></a
+                  ><a
                     class="socialContainer containerThree"
                     href="https://t.me/avatsanat"
                     target="_blank"
-                  >
-                    <i class="fa-brands fa-telegram" aria-hidden="true"></i>
-                  </a>
-                  <a
+                    ><i class="fa-brands fa-telegram" aria-hidden="true"></i></a
+                  ><a
                     class="socialContainer containerTwo"
                     href="https://wa.me/989133163326"
                     target="_blank"
-                  >
-                    <i class="fa-brands fa-whatsapp" aria-hidden="true"></i>
-                  </a>
+                    ><i class="fa-brands fa-whatsapp" aria-hidden="true"></i
+                  ></a>
                 </div>
               </div>
             </section>
           </div>
         </div>
-        <!-- Last section -->
         <section class="w-full bg-blue">
           <section
             class="container flex flex-col sm:flex-row justify-between items-center py-5 text-gray-200 font-py-md"
@@ -1167,69 +1011,11 @@
       </footer>
     </main>
   </body>
-
-  <script src="./js/index.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-  <script src="https://unpkg.com/scrollreveal"></script>
-  <!-- Config... -->
-  <script>
-    // Swiper Config ----------------------------------------------------------------------------
-    // slider(.className   ,effectName    ,.prevtBottonID   ,.nexttBottonID   ,spaceBetween  ,autoPlay )
-    function slider(className, Eff, prevBtn, nextBtn, space, isPlay) {
-      const AutoValue = isPlay
-        ? { autoplay: { delay: 5000, disableOnInteraction: false } }
-        : null;
-      var swiper = new Swiper(className, {
-        spaceBetween: space,
-        effect: Eff,
-        ...AutoValue,
-        loop: true,
-        navigation: {
-          nextEl: prevBtn,
-          prevEl: nextBtn,
-        },
-      });
-      return swiper;
-    }
-    slider(
-      ".mySwiper",
-      "fade",
-      ".swiper-button-prev-costum",
-      ".swiper-button-next-costum",
-      0,
-      false
-    );
-    var swiper2 = new Swiper(".mySwiper2", {
-      slidesPerView: "auto",
-      spaceBetween: 20,
-      freeMode: true,
-      navigation: {
-        nextEl: ".prevBtn2",
-        prevEl: ".nextBtn2",
-      },
-    });
-    var swiper2 = new Swiper(".mySwiper3", {
-      slidesPerView: "auto",
-      spaceBetween: 20,
-      freeMode: true,
-      navigation: {
-        nextEl: ".prevBtn3",
-        prevEl: ".nextBtn3",
-      },
-    });
-    // scroollReveal Config ----------------------------------------------------------------------------
-    function animate(className, seconds, position, space, isreset) {
-      ScrollReveal().reveal(className, {
-        duration: seconds,
-        origin: position,
-        distance: space,
-        opacity: 0,
-        reset: isreset,
-      });
-    }
-    animate(".scrollEffBottom", 1000, "bottom", "50px");
-    animate(".scrollEffBottomByDelay1", 1300, "bottom", "50px");
-    animate(".scrollEffBottomByDelay2", 1400, "bottom", "50px");
-    animate(".scrollEffBottomByDelay3", 1500, "bottom", "50px");
-  </script>
+  <script
+    defer
+    src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"
+  ></script>
+  <script defer src="https://unpkg.com/scrollreveal"></script>
+  <script defer src="./js/main.js"></script>
+  <script defer src="./js/index.js"></script>
 </html>

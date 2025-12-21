@@ -3,50 +3,13 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>استند فروش</title>
     <link rel="stylesheet" href="./style/output.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
-      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
+    <link rel="icon" href="./images/icon.jpg" />
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
     />
-    <link rel="icon" href="./images/icon.jpg" />
-
-    <title>استند فروش</title>
-    <style>
-      .showInputSearch {
-        position: absolute !important;
-        left: 110%;
-        width: 200px;
-        animation: ShowInp ease 150ms forwards;
-      }
-
-      @keyframes ShowInp {
-        from {
-          width: 0;
-        }
-
-        to {
-          width: 200px;
-        }
-      }
-
-      .showLi ul {
-        display: block !important;
-      }
-
-      @media (prefers-reduced-motion: reduce) {
-        * {
-          animation: none;
-          transition: none;
-        }
-      }
-    </style>
   </head>
 
   <body>
@@ -819,27 +782,11 @@
         </section>
       </section>
     </footer>
-
-    <script src="./js/index.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-
-    <script>
-      var swiper = new Swiper(".mySwiper", {
-        spaceBetween: 0,
-        centeredSlides: true,
-        // autoplay: {
-        //     delay:1000,
-        //     disableOnInteraction: false,
-        // },
-        pagination: {
-          el: ".swiper-pagination",
-          clickable: true,
-        },
-        navigation: {
-          nextEl: ".swiper-button-next",
-          prevEl: ".swiper-button-prev",
-        },
-      });
-    </script>
   </body>
+  <script
+    defer
+    src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"
+  ></script>
+  <script defer src="./js/main.js"></script>
+  <script defer src="./js/prd1.js"></script>
 </html>
