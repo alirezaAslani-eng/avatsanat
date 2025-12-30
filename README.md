@@ -9,7 +9,7 @@ A profile of products and projects for the company [Avatsanatkian](https://www.i
 
 ## Tools/Packages used : 
 ``scrollreveal``, ``TailwindCSS`` ,``swiper``
-## About the customer : 
+## About this customer : 
 Avatsanatkian is a company that focuses on modernizing amusement parks and parkings
 
 
