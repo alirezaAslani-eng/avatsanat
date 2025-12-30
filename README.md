@@ -1,4 +1,4 @@
-## A Company Profile built with HTML and TailwindCSS
+## A Company Profile built with HTML, TailwindCSS and JS
 
 A profile of products and projects for the company [Avatsanatkian](https://www.instagram.com/Avatsanatkian)
 
