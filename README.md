@@ -1,0 +1,23 @@
+## A Company Profile built with HTML and TailwindCSS
+
+A profile of products and projects for the company [Avatsanatkian](https://www.instagram.com/Avatsanatkian)
+
+## [Demo](https://alirezaaslani-eng.github.io/avatsanat/) 👀
+
+## Features 🎉
+- smooth animation appearance of elements with scrollReveal.js   
+
+## Tools/Packages used : 
+``scrollreveal``, ``TailwindCSS`` ,``swiper``
+
+
+
+
+
+
+
+
+
+
+
+
